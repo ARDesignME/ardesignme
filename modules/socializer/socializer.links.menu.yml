@@ -1,0 +1,6 @@
+socializer.admin_settings:
+  title: 'Socializer'
+  description: 'Configure links and display of social media account profile and share buttons'
+  parent: system.admin_config_services
+  route_name: socializer.admin_settings
+  weight: 100

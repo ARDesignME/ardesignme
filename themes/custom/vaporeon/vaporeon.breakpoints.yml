@@ -1,0 +1,28 @@
+starter.iphonese:
+  label: Small Mobile
+  mediaQuery: 'screen and (min-width: 321px) and (max-width: 480px)'
+  weight: 0
+  multipliers:
+    - 1x
+    - 2x
+starter.iphone6:
+  label: Medium Mobile
+  mediaQuery: 'screen and (min-width: 481px) and (max-width: 736px)'
+  weight: 1
+  multipliers:
+    - 1x
+    - 2x
+starter.iphone7:
+  label: Large Mobile
+  mediaQuery: 'screen and (min-width: 737px) and (max-width: 1080px)'
+  weight: 2
+  multipliers:
+    - 1x
+    - 2x
+starter.desktop:
+  label: Desktop
+  mediaQuery: 'screen and (min-width: 1081px)'
+  weight: 3
+  multipliers:
+    - 1x
+    - 2x

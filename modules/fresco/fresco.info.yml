@@ -1,0 +1,5 @@
+name: Fresco
+description: Adds image blocks. See readme.
+package: Blocks
+type: module
+core: 8.x

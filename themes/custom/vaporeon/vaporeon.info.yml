@@ -1,0 +1,17 @@
+name: Vaporeon
+description: Clean, minimalistic portfolio theme
+type: theme
+core: 8.x
+libraries:
+  - vaporeon/global-css
+  - vaporeon/global-js
+stylesheets-remove:
+  - core/themes/stable/css/views/views.module.css
+  - core/themes/stable/css/system/components/align.module.css
+
+regions:
+  header: 'Header'
+  branding: 'Site Branding'
+  navigation: 'Main Navigation'
+  content: 'Main Content'
+  footer: 'Footer'

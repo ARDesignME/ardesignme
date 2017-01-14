@@ -1,0 +1,13 @@
+<?php
+
+function vaporeon_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if (in_array($form_id, ['contact_message_connect_form', ])) {
+    $key = ($form_id == 'contact_message_connect_form') ? 'actions' : 'basic';
+    $form[$key]['submit']['#value'] = 'Send';
+    $form[$key]['preview']['#access'] = FALSE;
+  }
+}
+
+
+
+?>

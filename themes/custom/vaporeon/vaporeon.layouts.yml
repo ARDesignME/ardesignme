@@ -1,0 +1,64 @@
+homepage:
+  label: 4 Sections
+  category: Front Page
+  template: layouts/section_quad
+  css: css/style.min.css
+  regions:
+    first_section:
+      label: Section A
+    second_section:
+      label: Section B
+    third_section:
+      label: Section C
+    fourth_section:
+      label: Section D
+gallery:
+  label: Gallery
+  category: Portfolio
+  template: layouts/gallery
+  css: css/style.min.css
+  regions:
+    content:
+      label: Content
+portfolio:
+  label: Portfolio
+  category: Portfolio
+  template: layouts/portfolio
+  css: css/style.min.css
+  regions:
+    content:
+      label: Content
+gallery_content:
+  label: Gallery Node
+  category: Portfolio
+  template: layouts/gallery_content
+  css: css/style.min.css
+  regions:
+    main_image:
+      label: Main Image
+    gallery:
+      label: Gallery
+    content:
+      label: Content
+    share:
+      label: Share/Info
+    bottom:
+      label: Bottom
+two_column_reverse:
+  label: Two Column - Reverse Mobile
+  category: Portfolio
+  template: layouts/two_column_reverse
+  css: css/style.min.css
+  regions:
+    column_first:
+      label: First Column (left)
+    column_second:
+      label: Second Column (right)
+basic_page:
+  label: Basic Page
+  category: Page
+  template: layouts/basic_page
+  css: css/style.min.css
+  regions:
+    content:
+      label: Content

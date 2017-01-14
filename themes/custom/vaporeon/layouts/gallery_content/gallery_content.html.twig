@@ -1,0 +1,28 @@
+<div id="panels-gallery-content">
+  <div class="gallery-wrapper">
+    <div class="selected-image">
+      <a class="pin-it" data-pin-do="buttonPin" href="" data-pin-custom="true">
+        <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+      </a>
+      <div class="image"></div>
+    </div>
+    {{ content.gallery }}
+  </div>
+  <div class="content-wrapper">
+    <div class='divider'></div>
+    {{ content.content }}
+    <div class="share-menu" role="menu" aria-label="share menu">
+
+      <div class="share-menu-button" aria-label="expand share menu" role="button">
+        <i class="fa fa-share" aria-hidden="true"></i>
+      </div>
+
+      <div class="share-menu-expand">
+        {{ content.share }}
+      </div>
+    </div>
+  </div>
+  <div class="content-bottom">
+    {{ content.bottom }}
+  </div>
+</div>

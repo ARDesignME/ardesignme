@@ -1,0 +1,9 @@
+name: Socializer
+description: Adds Social Media blocks for profile links buttons and share buttons. Requires Font Awesome. See readme.
+package: Social Media
+type: module
+core: 8.x
+libraries:
+  - socializer/global-css
+dependencies:
+  - token

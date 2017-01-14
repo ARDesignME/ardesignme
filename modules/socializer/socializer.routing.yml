@@ -1,0 +1,7 @@
+socializer.admin_settings:
+  path: '/admin/config/socializer'
+  defaults:
+    _form: '\Drupal\socializer\Form\SocializerConfigurationForm'
+    _title: 'Socializer Configuration'
+  requirements:
+    _permission: 'administer site configuration'

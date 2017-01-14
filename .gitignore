@@ -1,0 +1,20 @@
+# Ignore theme development items
+themes/custom/*/development
+themes/custom/*/node_modules
+themes/custom/*/gulpfile.js
+themes/custom/*/package.json
+
+# Ignore site settings
+sites/sites.php
+sites/development.services.yml
+sites/*/settings.php
+sites/*/services.yml
+
+# Ignore media files that can be transferred via FTP
+sites/*/files/media
+
+#Ignore files that can be installed or updated via Composer
+modules/contrib
+themes/contrib
+core
+vendor

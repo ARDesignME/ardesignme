@@ -1,0 +1,35 @@
+{#
+/**
+ * @file
+ * Displays Social Network link buttons
+ *
+ * Available variables:
+ * elements: array of social networks
+ *  - name: the lowercase name of the network
+ *  - text: the proper name of the network
+ *  - api_url: the api url of the share button. Uses Token; set in config
+ *  - icon_class: the Font Awesome icon class e.g. fa-facebook; set in config
+ * buttons: class of buttons; set in config, manipulate in CSS, JS, etc
+ *
+ */
+#}
+
+
+{% if elements %}
+  <ul class="{{ buttons }}">
+    {% for element in elements %}
+    <li class="{{ element.name }}" role="button" aria-label="Share on {{ element.text }}">
+      <a href="{{ element.api_url }}"
+        {% if element.name == 'pinterest' %}
+          data-pin-do="buttonBookmark" data-pin-custom="true"
+        {% endif %}
+        {% if element.name == 'google-plus' %}
+          class="g-plus" data-action="share"
+        {% endif %}
+        target="_blank">
+        <i class="fa {{ element.icon_class }} fa-lg" aria-hidden="true" alt="Share on {{ element.text }}"></i>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+{% endif %}

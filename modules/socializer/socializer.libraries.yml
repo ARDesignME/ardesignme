@@ -1,0 +1,6 @@
+global-css:
+  css:
+    theme:
+      css/style.css: {}
+    component:
+      /libraries/fonts/font-awesome/css/font-awesome.min.css: {}

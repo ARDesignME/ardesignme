@@ -1,0 +1,27 @@
+{#
+/**
+ * @file
+ * Displays Social Network link buttons
+ *
+ * Available variables:
+ * elements: array of social networks
+ *  - name: the lowercase name of the network
+ *  - text: the proper name of the network
+ *  - profile: the url to the profile; set in config
+ *  - icon_class: the Font Awesome icon class e.g. fa-facebook; set in config
+ * buttons: class of buttons; set in config, manipulate in CSS, JS, etc
+ *
+ */
+#}
+
+{% if elements %}
+  <ul class="{{ buttons }}">
+    {% for element in elements %}
+    <li class="{{ element.name }}" role="link" aria-label="Go to {{ element.text }} profile">
+      <a href="{{ element.profile }}" target="_blank">
+        <i class="fa {{ element.icon_class }} fa-lg" aria-hidden="true" alt="{{ element.text }}"></i>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+{% endif %}
