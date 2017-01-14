@@ -18,3 +18,5 @@ modules/contrib
 themes/contrib
 core
 vendor
+
+.DS_store
