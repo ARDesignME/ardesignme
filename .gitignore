@@ -20,3 +20,4 @@ core
 vendor
 
 .DS_store
+.htaccess

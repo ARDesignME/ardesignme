@@ -116,8 +116,6 @@ jQuery(document).ready(function($){
       popup('show');
     }, 2000);
 
-    //alert(window.location.protocol + '://' + window.location.host);
-
     function popup(hideOrShow) {
       var policyURL = window.location.protocol + '://' + window.location.host,
           cookiePopup = '<div id="cookie-popup">' +
@@ -206,52 +204,51 @@ $('.scroll-down').click(function(){
   $("html, body").animate({ scrollTop: sectop }, 800);
 });
 
-// var index = 0,
-//     currIndex = 0,
-//     elements = [];
-//
-//     $('.section').each(function(){
-//       var sectionTop = $(this).offset().top;
-//       elements.push(sectionTop);
-//     });
-//
-//
-//     var lastScrollTop = 0;
-//     $(window).scroll(function(event){
-//        var st = $(this).scrollTop(),
-//            windowHeight = $(window).height(),
-//            windowTop = $(window).scrollTop(),
-//            windowBottom = (windowTop + windowHeight);
-//
-//        if (st > lastScrollTop){ // downscroll code
-//          index = currIndex + 1;
-//          if (windowBottom > elements[index] + windowHeight / 2) {
-//            $("html, body").animate({ scrollTop: elements[index] }, 1000, function(){
-//              currIndex += 1;
-//            });
-//
-//          }
-//        } else { // upscroll code
-//          //index = currIndex - 1;
-//          //alert(currIndex);
-//         //  if (windowTop < elements[currIndex] ) {
-//         //    $("html, body").animate({ scrollTop: elements[index] }, 1000, function(){
-//         //      currIndex -= 1;
-//         //    });
-//         //  }
-//
-//        }
-//
-//        if ( currIndex > elements.length() ) {
-//          currIndex = elements.length();
-//        }
-//        lastScrollTop = st;
-//     });
 
-    //
 
 
 });// end doc
+
+jQuery(document).ready(function($){
+
+  $(window).load(function(){
+
+    /*--------------------------------------
+                    GROUPINGS
+    ---------------------------------------*/
+    //check URL and fire off grouping script
+
+    // - PORTFOLIO
+    if (window.location.href.indexOf('/portfolio') > -1) {
+      ga('set', 'contentGroup2', 'Portfolio');
+    }
+    // - PORTFOLIO CONTENT
+      // see layouts gallery_content.html.twig
+
+    // - SUPPORT
+    else if (window.location.href.indexOf('/work') > -1) {
+      ga('set', 'contentGroup1', 'About');
+    } else if (window.location.href.indexOf('/about') > -1 ) {
+      ga('set', 'contentGroup1', 'About');
+    } else if (window.location.href.indexOf('/connect') > -1 ) {
+      ga('set', 'contentGroup1', 'Contact');
+    }
+
+    // - HOME
+      // see page--front.html.twig
+
+  }); // end load
+
+
+  /*--------------------------------------
+                  GOALS
+  ---------------------------------------*/
+  $('input').data('ga-goal', 'submit').click(function(){
+    ga('send', { 'hitType': 'pageview', 'page': '/vpv/form-submit', 'title': window.location.pathname });
+  });
+
+
+}); // end ready
 
 jQuery(document).ready(function($){
   /*--------------------------------------
