@@ -1,0 +1,9 @@
+uuid: 454a809e-921a-478a-a8dc-8f77d5af465a
+langcode: en
+status: true
+dependencies: {  }
+name: 'Project Tags'
+vid: project_tags
+description: 'Project categories, e.g. companies'
+hierarchy: 0
+weight: 0

@@ -1,0 +1,41 @@
+uuid: ac8eba8d-7b06-47d8-8298-cdd85d2b530c
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.rectangle_desktop
+    - image.style.rectangle_iphone_5
+    - image.style.rectangle_iphone_6
+    - image.style.rectangle_iphone_7
+  theme:
+    - vaporeon
+id: rectangle
+label: Rectangle
+image_style_mappings:
+  -
+    breakpoint_id: starter.desktop
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: rectangle_iphone_7
+  -
+    breakpoint_id: starter.desktop
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: rectangle_desktop
+  -
+    breakpoint_id: starter.iphone7
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: rectangle_iphone_7
+  -
+    breakpoint_id: starter.iphone6
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: rectangle_iphone_6
+  -
+    breakpoint_id: starter.iphonese
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: rectangle_iphone_5
+breakpoint_group: vaporeon
+fallback_image_style: rectangle_iphone_7

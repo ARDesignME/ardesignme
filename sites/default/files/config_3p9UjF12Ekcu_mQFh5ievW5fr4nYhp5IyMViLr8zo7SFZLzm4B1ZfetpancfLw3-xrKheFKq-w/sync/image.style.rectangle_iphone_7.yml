@@ -1,0 +1,14 @@
+uuid: 9903e1a1-3642-49a9-94a9-9149c575d3ce
+langcode: en
+status: true
+dependencies: {  }
+name: rectangle_iphone_7
+label: 'Rectangle iPhone 7'
+effects:
+  f2cbb325-8bcd-4ee2-bbcb-b93685474409:
+    uuid: f2cbb325-8bcd-4ee2-bbcb-b93685474409
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1080
+      height: 667

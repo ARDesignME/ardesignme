@@ -1,0 +1,14 @@
+uuid: 7408b141-cdee-44f5-92b8-6e0c234c75f8
+langcode: en
+status: true
+dependencies: {  }
+name: rectangle_iphone_6
+label: 'Rectangle iPhone 6'
+effects:
+  139ac19e-ef25-4c63-b1ca-90f665631d89:
+    uuid: 139ac19e-ef25-4c63-b1ca-90f665631d89
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 736
+      height: 454

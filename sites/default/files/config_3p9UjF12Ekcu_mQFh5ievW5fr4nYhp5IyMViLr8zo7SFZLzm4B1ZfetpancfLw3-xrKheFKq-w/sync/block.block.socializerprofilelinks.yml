@@ -1,0 +1,21 @@
+uuid: 1a96cda0-66af-4f37-ae4c-a040d54b691d
+langcode: en
+status: true
+dependencies:
+  module:
+    - socializer
+  theme:
+    - vaporeon
+id: socializerprofilelinks
+theme: vaporeon
+region: branding
+weight: 0
+provider: null
+plugin: socializer_links_block
+settings:
+  id: socializer_links_block
+  label: 'Socializer Profile Links'
+  provider: socializer
+  label_display: '0'
+  class: 'socializer no-email'
+visibility: {  }

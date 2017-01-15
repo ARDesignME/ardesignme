@@ -1,0 +1,9 @@
+uuid: 5f516f2a-e059-4c45-800d-674a03cabe79
+langcode: en
+status: true
+dependencies: {  }
+name: 'Portfolio Tags'
+vid: portfolio_tags
+description: 'Portfolio item categories'
+hierarchy: 0
+weight: 0

@@ -1,0 +1,60 @@
+uuid: 841895f7-d7ab-46c9-8c84-63255283e887
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.linkit_result_thumbnail
+  module:
+    - file
+    - image
+    - imce
+    - node
+    - taxonomy
+third_party_settings:
+  imce:
+    use: true
+    scheme: public
+id: administrator
+label: Administrator
+description: 'Linkit profile for admins'
+attributes:
+  target:
+    id: target
+    weight: 0
+    settings:
+      widget_type: simple_checkbox
+  title:
+    id: title
+    weight: 0
+    settings:
+      automatic_title: false
+matchers:
+  f5fa430b-bc4b-42a5-a932-9ff30b17409a:
+    uuid: f5fa430b-bc4b-42a5-a932-9ff30b17409a
+    id: 'entity:node'
+    weight: 0
+    settings:
+      result_description: ''
+      bundles: {  }
+      group_by_bundle: false
+      include_unpublished: false
+  97443660-ac37-4b4c-bcf1-c195ce4e991d:
+    uuid: 97443660-ac37-4b4c-bcf1-c195ce4e991d
+    id: 'entity:taxonomy_term'
+    weight: 0
+    settings:
+      result_description: ''
+      bundles: {  }
+      group_by_bundle: false
+  b61086b9-288d-418c-9e1f-ba16e1fca4ed:
+    uuid: b61086b9-288d-418c-9e1f-ba16e1fca4ed
+    id: 'entity:file'
+    weight: 0
+    settings:
+      result_description: ''
+      bundles: null
+      group_by_bundle: null
+      images:
+        show_dimensions: true
+        show_thumbnail: true
+        thumbnail_image_style: linkit_result_thumbnail

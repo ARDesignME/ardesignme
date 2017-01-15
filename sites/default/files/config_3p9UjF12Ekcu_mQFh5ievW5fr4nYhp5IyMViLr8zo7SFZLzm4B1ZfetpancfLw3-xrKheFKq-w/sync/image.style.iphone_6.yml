@@ -1,0 +1,15 @@
+uuid: 1283d93f-c3f9-4e78-8776-174b02b7346e
+langcode: en
+status: true
+dependencies: {  }
+name: iphone_6
+label: 'iPhone 6'
+effects:
+  1dcee873-621e-4361-87a2-fd0f1b6d5088:
+    uuid: 1dcee873-621e-4361-87a2-fd0f1b6d5088
+    id: image_scale
+    weight: 1
+    data:
+      width: 736
+      height: null
+      upscale: false

@@ -1,0 +1,12 @@
+uuid: df240aab-c49c-4f44-b9d5-0fb60e639fae
+langcode: en
+status: true
+dependencies: {  }
+id: contact
+label: Contact
+description: 'Contact page'
+use_admin_theme: false
+path: /connect
+access_logic: and
+access_conditions: {  }
+parameters: {  }

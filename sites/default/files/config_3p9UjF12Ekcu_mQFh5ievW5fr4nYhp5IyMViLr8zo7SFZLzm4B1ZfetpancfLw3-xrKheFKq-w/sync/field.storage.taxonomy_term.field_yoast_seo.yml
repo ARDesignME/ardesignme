@@ -1,0 +1,19 @@
+uuid: 98bea601-732b-4b30-99e6-5f51a1a2246b
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+    - yoast_seo
+id: taxonomy_term.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: taxonomy_term
+type: yoast_seo
+settings: {  }
+module: yoast_seo
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

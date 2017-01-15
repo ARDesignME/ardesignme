@@ -1,0 +1,40 @@
+uuid: 3b1dff77-755c-4c8a-9686-78190a2acabf
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.connect
+    - field.field.contact_message.connect.field_email
+    - field.field.contact_message.connect.field_name
+id: contact_message.connect.default
+targetEntityType: contact_message
+bundle: connect
+mode: default
+content:
+  field_email:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: 'your @ddress'
+    third_party_settings: {  }
+    type: string_textfield
+  field_name:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: 'your moniker'
+    third_party_settings: {  }
+    type: string_textfield
+  message:
+    type: string_textarea
+    weight: 2
+    settings:
+      rows: 6
+      placeholder: 'let''s chat'
+    third_party_settings: {  }
+hidden:
+  copy: true
+  langcode: true
+  mail: true
+  name: true
+  subject: true

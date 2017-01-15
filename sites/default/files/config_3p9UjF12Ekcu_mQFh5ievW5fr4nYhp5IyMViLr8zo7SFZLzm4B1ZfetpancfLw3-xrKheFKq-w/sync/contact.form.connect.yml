@@ -1,0 +1,13 @@
+uuid: eb82eaf3-bfb0-4f95-9a02-94ce0e748d43
+langcode: en
+status: true
+dependencies: {  }
+id: connect
+label: Connect
+recipients:
+  - info@ardesignme.com
+  - absurdumest0@gmail.com
+reply: ''
+weight: 0
+message: 'Thanks for your message! I''ll get back to you A.S.A.P.'
+redirect: ''

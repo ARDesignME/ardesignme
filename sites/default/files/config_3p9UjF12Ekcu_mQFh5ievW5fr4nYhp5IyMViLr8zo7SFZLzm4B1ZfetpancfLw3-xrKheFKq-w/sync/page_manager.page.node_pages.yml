@@ -1,0 +1,16 @@
+uuid: be4ae0d0-61d5-44a6-b6e7-93081375c4b2
+langcode: en
+status: true
+dependencies: {  }
+id: node_pages
+label: 'Node Pages'
+description: ''
+use_admin_theme: false
+path: '/node/{node}'
+access_logic: and
+access_conditions: {  }
+parameters:
+  node:
+    machine_name: node
+    type: 'entity:node'
+    label: Content

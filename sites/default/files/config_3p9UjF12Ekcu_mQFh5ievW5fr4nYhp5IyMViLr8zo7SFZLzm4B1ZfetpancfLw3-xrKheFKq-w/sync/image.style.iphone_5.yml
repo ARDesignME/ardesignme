@@ -1,0 +1,15 @@
+uuid: a520888e-b6e9-46c2-ad65-c98e003fe02d
+langcode: en
+status: true
+dependencies: {  }
+name: iphone_5
+label: 'iPhone 5'
+effects:
+  492e2403-2f8f-4e6a-8542-c3285692eb78:
+    uuid: 492e2403-2f8f-4e6a-8542-c3285692eb78
+    id: image_scale
+    weight: 1
+    data:
+      width: 480
+      height: null
+      upscale: false

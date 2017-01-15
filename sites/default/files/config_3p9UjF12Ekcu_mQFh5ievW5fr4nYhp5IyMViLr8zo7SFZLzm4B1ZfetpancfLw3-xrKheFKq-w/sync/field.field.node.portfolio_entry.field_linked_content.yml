@@ -1,0 +1,27 @@
+uuid: e3f6d3e9-a188-4383-a836-e743e1b09de2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_linked_content
+    - node.type.portfolio_entry
+id: node.portfolio_entry.field_linked_content
+field_name: field_linked_content
+entity_type: node
+bundle: portfolio_entry
+label: 'Linked Content'
+description: 'Any related portfolio entries'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      portfolio_entry: portfolio_entry
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

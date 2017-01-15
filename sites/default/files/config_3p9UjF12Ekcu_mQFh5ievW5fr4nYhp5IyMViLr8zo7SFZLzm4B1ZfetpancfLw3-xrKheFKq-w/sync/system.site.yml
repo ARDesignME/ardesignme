@@ -1,0 +1,14 @@
+uuid: b7402f18-a96c-4da0-89f1-8766d3d44cd0
+name: 'AR Design'
+mail: info@ardesignme.com
+slogan: ''
+page:
+  403: ''
+  404: /search404
+  front: /front
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo

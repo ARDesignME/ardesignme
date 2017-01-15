@@ -1,0 +1,18 @@
+uuid: 3a738703-90ed-4aba-86d7-59ed7aa6ba1e
+langcode: en
+status: true
+dependencies:
+  theme:
+    - vaporeon
+id: pagetitle
+theme: vaporeon
+region: content
+weight: -2
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

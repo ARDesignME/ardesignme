@@ -1,0 +1,30 @@
+uuid: 280097bc-9372-4e0d-b4f2-3f5bc0e13181
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_taxonomy
+    - node.type.portfolio_entry
+    - taxonomy.vocabulary.portfolio_tags
+    - taxonomy.vocabulary.project_tags
+id: node.portfolio_entry.field_taxonomy
+field_name: field_taxonomy
+entity_type: node
+bundle: portfolio_entry
+label: Taxonomy
+description: 'Taxonomy terms associated with the portfolio item'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      portfolio_tags: portfolio_tags
+      project_tags: project_tags
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: portfolio_tags
+field_type: entity_reference

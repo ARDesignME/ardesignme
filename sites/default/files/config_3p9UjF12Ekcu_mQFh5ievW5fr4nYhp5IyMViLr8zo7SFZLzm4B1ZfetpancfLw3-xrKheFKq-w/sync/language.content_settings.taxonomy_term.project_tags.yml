@@ -1,0 +1,11 @@
+uuid: 2449d0e8-ae0c-46b7-9d58-ca4a2bc769a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.project_tags
+id: taxonomy_term.project_tags
+target_entity_type_id: taxonomy_term
+target_bundle: project_tags
+default_langcode: site_default
+language_alterable: false

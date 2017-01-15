@@ -1,0 +1,41 @@
+uuid: 49ad3a62-907c-455d-a293-747cf52fbd43
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.taxonomy_page
+    - views.view.portfolio_taxonomy
+  module:
+    - panels
+    - views
+id: taxonomy_page-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    2fa483e0-6f39-4035-b1b3-0e6369cfd58c:
+      id: 'views_block:portfolio_taxonomy-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: content
+      weight: 0
+      uuid: 2fa483e0-6f39-4035-b1b3-0e6369cfd58c
+      context_mapping: {  }
+  id: panels_variant
+  uuid: 7c9f0c08-a698-4539-b9d6-4c5b22058bc3
+  label: null
+  weight: 0
+  layout: gallery
+  layout_settings: {  }
+  page_title: '[term:name]'
+  storage_type: page_manager
+  storage_id: taxonomy_page-panels_variant-0
+  builder: standard
+page: taxonomy_page
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

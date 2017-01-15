@@ -1,0 +1,21 @@
+uuid: 011dca06-7dd9-4901-a524-cc5ea5bcd1e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_yoast_seo
+    - taxonomy.vocabulary.tags
+  module:
+    - yoast_seo
+id: taxonomy_term.tags.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: taxonomy_term
+bundle: tags
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

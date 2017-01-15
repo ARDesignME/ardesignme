@@ -1,0 +1,15 @@
+uuid: 3f49b232-28fa-4dbd-ba32-6803653184b4
+langcode: en
+status: true
+dependencies: {  }
+name: iphone_7
+label: 'iPhone 7'
+effects:
+  80a07e84-2e99-4944-8908-84bad7393c43:
+    uuid: 80a07e84-2e99-4944-8908-84bad7393c43
+    id: image_scale
+    weight: 1
+    data:
+      width: 1080
+      height: null
+      upscale: false

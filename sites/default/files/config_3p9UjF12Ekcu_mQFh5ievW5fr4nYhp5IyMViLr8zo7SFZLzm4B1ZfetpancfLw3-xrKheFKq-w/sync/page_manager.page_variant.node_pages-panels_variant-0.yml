@@ -1,0 +1,114 @@
+uuid: d2a2d6c6-8768-4836-bb9e-464e7d2b510d
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.node_pages
+    - views.view.portfolio_content
+  module:
+    - ctools
+    - ctools_block
+    - panels
+    - socializer
+    - views
+id: node_pages-panels_variant-0
+label: 'Gallery Nodes'
+variant: panels_variant
+variant_settings:
+  blocks:
+    3366c381-b9e6-4cc9-a18e-0e1a168ebb0a:
+      id: 'entity_field:node:field_gallery'
+      label: Gallery
+      provider: ctools_block
+      label_display: '0'
+      formatter:
+        label: hidden
+        type: responsive_image
+        settings:
+          responsive_image_style: original_ratio
+          image_link: ''
+        third_party_settings: {  }
+        weight: 0
+      region: gallery
+      weight: -1
+      uuid: 3366c381-b9e6-4cc9-a18e-0e1a168ebb0a
+      context_mapping:
+        entity: node
+    356dcf78-e5e0-43b5-89b9-198fdf502d86:
+      id: 'entity_field:node:body'
+      label: Body
+      provider: ctools_block
+      label_display: '0'
+      formatter:
+        label: hidden
+        type: text_default
+        settings: {  }
+        third_party_settings: {  }
+        weight: 0
+      region: content
+      weight: -9
+      uuid: 356dcf78-e5e0-43b5-89b9-198fdf502d86
+      context_mapping:
+        entity: node
+    4c68ec77-2811-4bf5-ad4c-5620384694c7:
+      id: 'entity_field:node:created'
+      label: 'Authored on'
+      provider: ctools_block
+      label_display: '0'
+      formatter:
+        label: hidden
+        type: timestamp
+        settings:
+          date_format: custom
+          custom_date_format: 'F Y'
+          timezone: America/New_York
+        third_party_settings: {  }
+        weight: 0
+      region: content
+      weight: -10
+      uuid: 4c68ec77-2811-4bf5-ad4c-5620384694c7
+      context_mapping:
+        entity: node
+    e1748563-0fc7-4742-b24d-0439c100e599:
+      id: socializer_share_block
+      label: 'Socializer Share Buttons'
+      provider: socializer
+      label_display: '0'
+      class: socializer
+      region: share
+      weight: -1
+      uuid: e1748563-0fc7-4742-b24d-0439c100e599
+      context_mapping: {  }
+    448a6aa8-b2ec-421d-83f5-427aab194a3d:
+      id: 'views_block:portfolio_content-block_3'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: bottom
+      weight: 0
+      uuid: 448a6aa8-b2ec-421d-83f5-427aab194a3d
+      context_mapping: {  }
+  id: panels_variant
+  uuid: ec265545-6095-4369-807b-510737d61109
+  label: null
+  weight: 0
+  layout: gallery_content
+  layout_settings: {  }
+  page_title: '[node:title]'
+  storage_type: page_manager
+  storage_id: node_pages-panels_variant-0
+  builder: standard
+page: node_pages
+weight: 0
+selection_criteria:
+  -
+    id: 'entity_bundle:node'
+    bundles:
+      portfolio_entry: portfolio_entry
+    negate: false
+    context_mapping:
+      node: node
+selection_logic: and
+static_context: {  }

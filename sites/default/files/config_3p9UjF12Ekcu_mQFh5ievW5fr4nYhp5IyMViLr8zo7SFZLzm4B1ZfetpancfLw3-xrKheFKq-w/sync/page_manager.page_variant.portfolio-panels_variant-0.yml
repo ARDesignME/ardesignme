@@ -1,0 +1,96 @@
+uuid: 684c6c2f-a71c-4c91-953b-1265742f53b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.portfolio
+    - views.view.portfolio_categories
+  module:
+    - panels
+    - views
+id: portfolio-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    f97501e5-1388-4d1b-a9fa-853b0013924f:
+      id: 'views_block:portfolio_categories-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: '1'
+      region: content
+      weight: -2
+      uuid: f97501e5-1388-4d1b-a9fa-853b0013924f
+      context_mapping: {  }
+    e5d24c8b-7e43-41ac-bae4-665226b5e592:
+      id: 'views_block:portfolio_categories-block_5'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: content
+      weight: 3
+      uuid: e5d24c8b-7e43-41ac-bae4-665226b5e592
+      context_mapping: {  }
+    afd65aa0-6baa-4d98-9b80-e37fb312e44e:
+      id: 'views_block:portfolio_categories-block_4'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: '1'
+      region: content
+      weight: 1
+      uuid: afd65aa0-6baa-4d98-9b80-e37fb312e44e
+      context_mapping: {  }
+    c3ea3b0e-aa37-4ae8-9c9b-b3c2a73247ef:
+      id: 'views_block:portfolio_categories-block_3'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: '1'
+      region: content
+      weight: 0
+      uuid: c3ea3b0e-aa37-4ae8-9c9b-b3c2a73247ef
+      context_mapping: {  }
+    e8590ea1-4a38-4cb2-8e74-dff42302a81e:
+      id: 'views_block:portfolio_categories-block_6'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: '1'
+      region: content
+      weight: 2
+      uuid: e8590ea1-4a38-4cb2-8e74-dff42302a81e
+      context_mapping: {  }
+    99f55451-260e-4a4f-a6f8-2ff505519635:
+      id: 'views_block:portfolio_categories-block_2'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: '1'
+      region: content
+      weight: -1
+      uuid: 99f55451-260e-4a4f-a6f8-2ff505519635
+      context_mapping: {  }
+  id: panels_variant
+  uuid: 5ad4c0ef-4f61-4263-ab6f-f924e6646d2f
+  label: null
+  weight: 0
+  layout: portfolio
+  layout_settings: {  }
+  page_title: Portfolio
+  storage_type: page_manager
+  storage_id: portfolio-panels_variant-0
+  builder: standard
+page: portfolio
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

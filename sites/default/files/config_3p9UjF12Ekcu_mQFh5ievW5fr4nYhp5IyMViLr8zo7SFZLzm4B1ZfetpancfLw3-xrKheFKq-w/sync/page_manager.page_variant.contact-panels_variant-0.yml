@@ -1,0 +1,66 @@
+uuid: 4fa9273b-2da3-47e4-bb92-70e263b918a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.connect
+    - page_manager.page.contact
+  content:
+    - 'block_content:basic:f2278167-e3f8-44f6-a1b1-5540b16a7a06'
+  module:
+    - block_content
+    - contact_block
+    - panels
+    - socializer
+id: contact-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    ab2aaa5b-d3e9-434c-a056-86f41f232d70:
+      id: socializer_links_block
+      label: 'Socializer Profile Links'
+      provider: socializer
+      label_display: '0'
+      class: 'socializer no-email'
+      region: column_second
+      weight: 0
+      uuid: ab2aaa5b-d3e9-434c-a056-86f41f232d70
+      context_mapping: {  }
+    c37e0efe-afcb-48a1-959b-71fe274c4f5d:
+      id: contact_block
+      label: 'Contact form'
+      provider: contact_block
+      label_display: '0'
+      contact_form: connect
+      region: column_first
+      weight: 0
+      uuid: c37e0efe-afcb-48a1-959b-71fe274c4f5d
+      context_mapping: {  }
+    dbd0be9a-9d10-473e-9248-53cf47febc9d:
+      id: 'block_content:f2278167-e3f8-44f6-a1b1-5540b16a7a06'
+      label: 'Connect Page Text'
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: full
+      region: column_second
+      weight: -1
+      uuid: dbd0be9a-9d10-473e-9248-53cf47febc9d
+      context_mapping: {  }
+  id: panels_variant
+  uuid: 73eaf7d9-9764-4bd0-b647-6094544a9d14
+  label: null
+  weight: 0
+  layout: two_column_reverse
+  layout_settings: {  }
+  page_title: Connect
+  storage_type: page_manager
+  storage_id: contact-panels_variant-0
+  builder: standard
+page: contact
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

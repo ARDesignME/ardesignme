@@ -1,0 +1,12 @@
+uuid: e1af9a62-72df-46ac-9a0f-c267a2810b8d
+langcode: en
+status: true
+dependencies: {  }
+id: projects
+label: Projects
+description: ''
+use_admin_theme: false
+path: /portfolio/projects
+access_logic: and
+access_conditions: {  }
+parameters: {  }

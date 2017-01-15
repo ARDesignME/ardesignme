@@ -1,0 +1,14 @@
+uuid: 6583870d-8552-4ecf-8ee3-0c5fdcf1d4ec
+langcode: en
+status: true
+dependencies: {  }
+name: rectangle_iphone_5
+label: 'Rectangle iPhone 5'
+effects:
+  1183eb92-c333-41b1-bc73-647ae821455c:
+    uuid: 1183eb92-c333-41b1-bc73-647ae821455c
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 480
+      height: 296

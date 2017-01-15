@@ -1,0 +1,35 @@
+uuid: 83339ed1-c8c0-43e7-b3c7-b8ac8b94c3cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.connect
+    - field.field.contact_message.connect.field_email
+    - field.field.contact_message.connect.field_name
+id: contact_message.connect.default
+targetEntityType: contact_message
+bundle: connect
+mode: default
+content:
+  field_email:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_name:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  message:
+    type: basic_string
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

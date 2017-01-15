@@ -1,0 +1,56 @@
+uuid: ee3e299d-a346-4ee7-9480-fb14820ed17d
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.front
+    - views.view.portfolio_content
+  content:
+    - 'block_content:basic:024c9d92-782f-408d-bf1d-cbbb7c21ff63'
+  module:
+    - block_content
+    - panels
+    - views
+id: front-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    a00101f5-1324-498b-b0df-811626eea35b:
+      id: 'block_content:024c9d92-782f-408d-bf1d-cbbb7c21ff63'
+      label: 'Front - Quote Text'
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: full
+      region: second_section
+      weight: 0
+      uuid: a00101f5-1324-498b-b0df-811626eea35b
+      context_mapping: {  }
+    740181ed-8366-4a6f-b33d-164177852366:
+      id: 'views_block:portfolio_content-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: '1'
+      region: third_section
+      weight: 0
+      uuid: 740181ed-8366-4a6f-b33d-164177852366
+      context_mapping: {  }
+  id: panels_variant
+  uuid: a69f9d6c-57bc-4153-a32b-89228fb08be9
+  label: null
+  weight: 0
+  layout: homepage
+  layout_settings: {  }
+  page_title: ''
+  storage_type: page_manager
+  storage_id: front-panels_variant-0
+  builder: standard
+page: front
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

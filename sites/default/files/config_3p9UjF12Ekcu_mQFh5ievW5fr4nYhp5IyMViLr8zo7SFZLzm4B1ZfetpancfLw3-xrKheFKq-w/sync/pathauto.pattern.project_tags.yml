@@ -1,0 +1,23 @@
+uuid: ad8998cc-3fae-461b-984f-6c2cebebcb25
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: project_tags
+label: 'Project Tags'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/portfolio/projects/[term:name]'
+selection_criteria:
+  213c3042-86f3-4fbf-9e30-147b46319878:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      project_tags: project_tags
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 213c3042-86f3-4fbf-9e30-147b46319878
+selection_logic: and
+weight: -5
+relationships: {  }

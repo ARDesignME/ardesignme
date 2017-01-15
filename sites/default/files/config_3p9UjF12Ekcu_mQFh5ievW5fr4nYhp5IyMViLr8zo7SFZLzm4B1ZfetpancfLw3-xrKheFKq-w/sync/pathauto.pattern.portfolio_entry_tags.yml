@@ -1,0 +1,23 @@
+uuid: c3b00741-d331-4499-98bf-42eed93262ad
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: portfolio_entry_tags
+label: 'Portfolio Entry Tags'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/portfolio/[term:name]'
+selection_criteria:
+  3a987879-8785-4e8d-9d38-075520a148da:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      portfolio_tags: portfolio_tags
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 3a987879-8785-4e8d-9d38-075520a148da
+selection_logic: and
+weight: -5
+relationships: {  }

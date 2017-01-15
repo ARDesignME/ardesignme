@@ -1,0 +1,14 @@
+uuid: 66cd0e69-bcd4-4866-b64b-97e076214b27
+langcode: en
+status: true
+dependencies: {  }
+name: rectangle_desktop
+label: 'Rectangle Desktop'
+effects:
+  cb4e15df-42f8-4ddb-8f93-8b1681f4a3a4:
+    uuid: cb4e15df-42f8-4ddb-8f93-8b1681f4a3a4
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 2000
+      height: 1234

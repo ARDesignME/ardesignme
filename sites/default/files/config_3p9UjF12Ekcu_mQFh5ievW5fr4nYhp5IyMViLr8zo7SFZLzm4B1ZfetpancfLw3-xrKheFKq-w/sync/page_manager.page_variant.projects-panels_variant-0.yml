@@ -1,0 +1,41 @@
+uuid: 3dd89f30-8a46-4e83-92dd-d0bf20314d53
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.projects
+    - views.view.taxonomy_lists
+  module:
+    - panels
+    - views
+id: projects-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    25251ea0-31d4-4f61-836f-773667f319f7:
+      id: 'views_block:taxonomy_lists-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: content
+      weight: 0
+      uuid: 25251ea0-31d4-4f61-836f-773667f319f7
+      context_mapping: {  }
+  id: panels_variant
+  uuid: 7a5c6a8a-5105-42f7-ad2b-a7c92410c85e
+  label: null
+  weight: 0
+  layout: gallery
+  layout_settings: {  }
+  page_title: Projects
+  storage_type: page_manager
+  storage_id: projects-panels_variant-0
+  builder: standard
+page: projects
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }
