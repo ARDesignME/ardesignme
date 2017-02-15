@@ -1,0 +1,41 @@
+uuid: 559e5d7d-1046-41ce-b3cf-8a71084b3dc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.recent_portfolio
+    - views.view.portfolio_content
+  module:
+    - panels
+    - views
+id: recent_portfolio-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    990aaf23-166b-4c16-9619-3684634e35a1:
+      id: 'views_block:portfolio_content-block_4'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: content
+      weight: 0
+      uuid: 990aaf23-166b-4c16-9619-3684634e35a1
+      context_mapping: {  }
+  id: panels_variant
+  uuid: f165d199-86e0-4732-87a5-4f8d47bf8a4f
+  label: null
+  weight: 0
+  layout: gallery
+  layout_settings: {  }
+  page_title: Recent
+  storage_type: page_manager
+  storage_id: recent_portfolio-panels_variant-0
+  builder: standard
+page: recent_portfolio
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

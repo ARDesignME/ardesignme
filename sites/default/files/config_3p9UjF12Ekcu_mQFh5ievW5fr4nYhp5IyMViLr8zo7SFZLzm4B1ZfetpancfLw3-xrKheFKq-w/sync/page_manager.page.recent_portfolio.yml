@@ -1,0 +1,12 @@
+uuid: bf8f0a27-1f76-4343-8965-2444502d2d0f
+langcode: en
+status: true
+dependencies: {  }
+id: recent_portfolio
+label: 'Recent Portfolio'
+description: ''
+use_admin_theme: false
+path: /portfolio/recent
+access_logic: and
+access_conditions: {  }
+parameters: {  }
