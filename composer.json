@@ -61,7 +61,9 @@
             "themes/custom/{$name}": ["type:drupal-custom-theme"]
         },
         "patches": {
-
+            "drupal/yoast_seo": {
+              "Tokens error fix": "https://www.drupal.org/files/issues/yoast_seo-issue_2773075-missing_tokens.patch"
+            }
         }
     },
     "autoload": {

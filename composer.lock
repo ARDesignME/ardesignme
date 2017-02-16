@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "87b19b734e72391845e553b09cbb2f75",
+    "content-hash": "df2b4cfd33b177fcbacf0917ef5d567e",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1461,7 +1461,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/metatag",
-                "reference": "ee21ffdb6dbff781313460b5c6a832d71d98040f"
+                "reference": "5be4d14c520c7645fbb9b0ebeaec4f18e81e30ae"
             },
             "require": {
                 "drupal/core": "*",
@@ -1506,7 +1506,7 @@
                 "source": "http://cgit.drupalcode.org/metatag",
                 "issues": "http://drupal.org/project/issues/metatag"
             },
-            "time": "2017-01-31 22:07:42"
+            "time": "2017-02-15 14:41:29"
         },
         {
             "name": "drupal/page_manager",
@@ -2011,7 +2011,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/yoast_seo-8.x-1.1.zip",
-                "reference": "8.x-1.1",
+                "reference": null,
                 "shasum": "01a7ddbc69beacf9790086fafca879b6c0e3fa57"
             },
             "require": {
@@ -2026,7 +2026,8 @@
                 "drupal": {
                     "version": "8.x-1.1",
                     "datestamp": "1480952282"
-                }
+                },
+                "patches_applied": []
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
