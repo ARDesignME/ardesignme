@@ -6,14 +6,18 @@ dependencies:
     - field.field.node.portfolio_entry.body
     - field.field.node.portfolio_entry.field_gallery
     - field.field.node.portfolio_entry.field_linked_content
+    - field.field.node.portfolio_entry.field_meta_tags
     - field.field.node.portfolio_entry.field_taxonomy
+    - field.field.node.portfolio_entry.field_yoast_seo
     - image.style.thumbnail
     - node.type.portfolio_entry
   module:
     - image
     - imce
+    - metatag
     - path
     - text
+    - yoast_seo
 id: node.portfolio_entry.default
 targetEntityType: node
 bundle: portfolio_entry
@@ -49,6 +53,11 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+  field_meta_tags:
+    weight: 35
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
   field_taxonomy:
     weight: 33
     settings:
@@ -57,6 +66,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+  field_yoast_seo:
+    weight: 36
+    settings:
+      body: body
+    third_party_settings: {  }
+    type: yoast_seo_widget
   langcode:
     type: language_select
     weight: 2

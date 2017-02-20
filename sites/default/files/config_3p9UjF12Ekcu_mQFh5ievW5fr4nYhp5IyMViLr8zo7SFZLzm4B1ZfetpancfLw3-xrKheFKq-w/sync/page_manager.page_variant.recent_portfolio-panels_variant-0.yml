@@ -1,10 +1,10 @@
-uuid: 559e5d7d-1046-41ce-b3cf-8a71084b3dc0
+uuid: e5f8a664-4b01-4157-95ff-7e16fe7ea522
 langcode: en
 status: true
 dependencies:
   config:
     - page_manager.page.recent_portfolio
-    - views.view.portfolio_content
+    - views.view.portfolio_taxonomy
   module:
     - panels
     - views
@@ -13,8 +13,8 @@ label: Panels
 variant: panels_variant
 variant_settings:
   blocks:
-    990aaf23-166b-4c16-9619-3684634e35a1:
-      id: 'views_block:portfolio_content-block_4'
+    c168aa29-3ce4-40af-a481-7fae41180ee8:
+      id: 'views_block:portfolio_taxonomy-block_2'
       label: ''
       provider: views
       label_display: '0'
@@ -22,10 +22,10 @@ variant_settings:
       items_per_page: none
       region: content
       weight: 0
-      uuid: 990aaf23-166b-4c16-9619-3684634e35a1
+      uuid: c168aa29-3ce4-40af-a481-7fae41180ee8
       context_mapping: {  }
   id: panels_variant
-  uuid: f165d199-86e0-4732-87a5-4f8d47bf8a4f
+  uuid: b3d51508-cc49-43a8-bce6-5e4d41cfa65a
   label: null
   weight: 0
   layout: gallery

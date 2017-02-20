@@ -5,5 +5,5 @@ dependencies: {  }
 name: 'Portfolio Tags'
 vid: portfolio_tags
 description: 'Portfolio item categories'
-hierarchy: 0
+hierarchy: 1
 weight: 0

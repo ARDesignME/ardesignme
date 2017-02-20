@@ -7,4 +7,22 @@ _core:
 id: global
 label: Global
 tags:
+  abstract: '[node:content-type:description]'
+  description: '[node:content-type:description]'
   title: '[current-page:title] | [site:name]'
+  google_plus_author: 'https://plus.google.com/u/0/106387378610195865335'
+  google_plus_description: '[node:summary]'
+  google_plus_image: /sites/default/files/media/images/other/ar-design-opengraph.jpg
+  google_plus_name: '[current-page:title]'
+  article_author: 'https://www.facebook.com'
+  og_description: '[node:summary]'
+  og_image: /sites/default/files/media/images/other/ar-design-opengraph.jpg
+  og_site_name: 'AR Design'
+  og_title: '[current-page:title]'
+  og_url: '[current-page:url]'
+  twitter_cards_description: '[node:summary]'
+  twitter_cards_page_url: '[current-page:url]'
+  twitter_cards_site: '@ardesignme'
+  twitter_cards_site_id: '759405229683142656'
+  twitter_cards_title: '[node:title]'
+  twitter_cards_type: photo

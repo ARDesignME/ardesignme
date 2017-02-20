@@ -1,0 +1,23 @@
+uuid: 2e9a8439-0288-4976-ad3b-861e9b61550b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.portfolio_entry
+  module:
+    - metatag
+id: node.portfolio_entry.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: portfolio_entry
+label: 'Meta tags'
+description: 'Meta Tags for the SEO'
+required: false
+translatable: true
+default_value:
+  -
+    value: 'a:0:{}'
+default_value_callback: ''
+settings: {  }
+field_type: metatag

@@ -396,3 +396,31 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_gallery'
+  block_2:
+    display_plugin: block
+    id: block_2
+    display_title: 'Recent Content'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      relationships: {  }
+      defaults:
+        relationships: false
+        arguments: false
+        pager: false
+      arguments: {  }
+      pager:
+        type: some
+        options:
+          items_per_page: 6
+          offset: 0
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_gallery'

@@ -73,7 +73,7 @@ social_networks:
     icon_class: fa-youtube
   email:
     text: E-Mail
-    profile: '[site:url]/connect/'
+    profile: /connect/
     profile_order: '10'
     profile_enable: 1
     api_url: 'mailto:?subject=[current-page:title]&body=You''ve gotta check out this site [current-page:url]'

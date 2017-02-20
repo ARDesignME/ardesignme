@@ -1,8 +1,9 @@
-uuid: 77481fad-c540-46c4-8766-b7e63aab1573
+uuid: 8f7aab80-246f-4171-ac35-d64dce69081d
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.token
     - field.field.node.portfolio_entry.body
     - field.field.node.portfolio_entry.field_gallery
     - field.field.node.portfolio_entry.field_linked_content
@@ -10,17 +11,16 @@ dependencies:
     - field.field.node.portfolio_entry.field_taxonomy
     - field.field.node.portfolio_entry.field_yoast_seo
     - node.type.portfolio_entry
-    - responsive_image.styles.original_ratio
   module:
+    - image
     - metatag
-    - responsive_image
     - text
     - user
     - yoast_seo
-id: node.portfolio_entry.default
+id: node.portfolio_entry.token
 targetEntityType: node
 bundle: portfolio_entry
-mode: default
+mode: token
 content:
   body:
     label: hidden
@@ -32,10 +32,10 @@ content:
     weight: 102
     label: hidden
     settings:
-      responsive_image_style: original_ratio
-      image_link: ''
+      image_style: ''
+      image_link: file
     third_party_settings: {  }
-    type: responsive_image
+    type: image
   field_linked_content:
     weight: 104
     label: above
