@@ -8,6 +8,4 @@ function vaporeon_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_
   }
 }
 
-
-
 ?>

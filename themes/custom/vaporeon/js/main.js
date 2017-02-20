@@ -48,9 +48,8 @@ jQuery(document).ready(function($){
       selectedImage = $('#panels-gallery-content .selected-image .image'),
       pinitButton = $('#panels-gallery-content .pin-it'),
       pinitAPI = 'https://www.pinterest.com/pin/create/button/?',
-      currentURL = window.location.protocol + window.location.host + window.location.pathname,
+      currentURL = window.location.protocol + '//' + window.location.host + window.location.pathname,
       imageSource = null;
-
 
   currentImage.first().clone().appendTo(selectedImage);
   currentImage.first().parent('div').addClass('selected');
@@ -60,7 +59,7 @@ jQuery(document).ready(function($){
   if ($('#panels-gallery-content .gallery-image').length == 1) {
     $('#panels-gallery-content .gallery-image').hide();
   }
-  
+
   currentImage.click(function(){
     var previousImage = currentImage;
 
