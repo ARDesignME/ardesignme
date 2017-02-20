@@ -55,6 +55,7 @@ jQuery(document).ready(function($){
   currentImage.first().parent('div').addClass('selected');
   imageSource = window.location.protocol + window.location.host + currentImage.first().find('img').attr('srcset');
   pinitButton.attr('href', pinitAPI + 'url=' + currentURL + "&media=" + imageSource);
+  imageSource = imageSource.substring(0, imageSource.length - 14);
 
   if ($('#panels-gallery-content .gallery-image').length == 1) {
     $('#panels-gallery-content .gallery-image').hide();
